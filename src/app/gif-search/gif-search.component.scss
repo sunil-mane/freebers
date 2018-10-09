@@ -1,0 +1,59 @@
+.gif-search {
+  height: 27rem;
+  background-color: #F16800;
+  text-align: center;
+
+  h2 {
+    margin: 5rem 0;
+    display: inline-block;
+    color: white;
+    font-size: 3rem;
+  }
+
+  input {
+    height: 2.875rem;
+    width: 20rem;
+    padding-left: .875rem;
+    border: 0;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    font-weight: 600;
+
+    &::placeholder {
+      color: #DCE0E1;
+    }
+  }
+
+  select {
+    height: 3rem;
+    width: 7rem;
+    background-color: #E3EEF4;
+    padding: 0 .875rem;
+    border: 0;
+    color: #C5D8DF;
+    font-weight: 600;
+  }
+
+  button {
+    height: 3rem;
+    width: 3rem;
+    border: 0;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    color: white;
+    background-color: black;
+    font-weight: 600;
+  }
+
+  h4 {
+    color: white;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+  }
+
+  h6 {
+    color: white;
+    margin-top: 2rem;
+    font-size: .875rem;
+  }
+}

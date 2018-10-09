@@ -1,11 +1,15 @@
-<form [formGroup]="gifSearchForm" (submit)="gifSearch()">
-  <label>Gif Search</label>
-  <input type="text" formControlName="query" placeholder="What are you looking for?">
-  <select formControlName="option">
-    <option value="all">Show All</option>
-  </select>
-  <button type="submit"><i class="fas fa-search"></i></button>
-</form>
+<div class="gif-search">
+  <h2>Gif Search</h2>
+  <form [formGroup]="gifSearchForm" (submit)="gifSearch()">
+    <input type="text" formControlName="query" placeholder="What are you looking for?">
+    <select formControlName="option">
+      <option value="all">Show All</option>
+    </select>
+    <button type="submit"><i class="fas fa-search"></i></button>
+  </form>
+  <h4>You can search any gif with our search</h4>
+  <h6>Everything you need for your creative projects, websites, banners, presentations, magzines and advertising.</h6>
+</div>
 <div class="search-result">
   <div *ngFor="let gif of gifs">
     <img [src]="gif.images.original.url">

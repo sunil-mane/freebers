@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { GifSearchService } from '../services/gif-search.service';
 
 @Component({
   selector: 'app-gif-search',
   templateUrl: './gif-search.component.html',
-  styleUrls: ['./gif-search.component.css']
+  styleUrls: ['./gif-search.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class GifSearchComponent implements OnInit {
   gifSearchForm: FormGroup;
