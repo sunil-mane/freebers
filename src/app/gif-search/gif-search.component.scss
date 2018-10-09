@@ -57,3 +57,12 @@
     font-size: .875rem;
   }
 }
+
+.search-result {
+  margin: 1rem;
+  text-align: center;
+  div {
+    display: inline-flex;
+    margin: .5rem;
+  }
+}

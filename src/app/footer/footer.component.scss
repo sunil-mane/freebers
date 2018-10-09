@@ -1,0 +1,61 @@
+footer {
+  width: 100%;
+  background-color: #373A3F;
+  color: white;
+  display: inline-flex;
+  height: 12rem;
+
+  .signup {
+    width: 50%;
+    display: block;
+    margin: 0 2rem;
+
+    input {
+      width: 20rem;
+      height: 2rem;
+      border-radius: 0.4rem;
+      border: 1px solid white;
+      margin-bottom: 1rem;
+      background-color: #373A3F;
+      padding-left: .75rem;
+      &::placeholder {
+        color: white;
+        font-weight: 500;
+      }
+    }
+  }
+
+  button{
+    width: 21rem;
+    height: 2rem;
+    border-radius: 0.4rem;
+    border: 0;
+    background-color: #2B88B4;
+    color: white;
+  }
+
+  .links {
+    width: 50%;
+    display: block;
+  }
+
+  h3 {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  .table {
+    width: 100%;
+    display: inline-flex;
+
+    ul {
+      width: 25%;
+      display: block;
+    }
+
+    li {
+      margin: .5rem;
+      font-size: .75rem;
+    }
+  }
+}
