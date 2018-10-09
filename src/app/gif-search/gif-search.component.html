@@ -1,9 +1,9 @@
-<form [formGroup]="gifSearchForm">
+<form [formGroup]="gifSearchForm" (submit)="gifSearch()">
   <label>Gif Search</label>
   <input type="text" formControlName="query" placeholder="What are you looking for?">
   <select formControlName="option">
     <option value="all">Show All</option>
   </select>
-  <button type="submit">q</button>
+  <button type="submit"><i class="fas fa-search"></i></button>
 </form>
 {{gifSearchForm.value | json}}

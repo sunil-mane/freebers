@@ -20,9 +20,9 @@ export class GifSearchComponent implements OnInit {
   }
 
   gifSearch() {
-    this.gifSearchService.search().subscribe(
+    this.gifSearchService.search(this.gifSearchForm.get('query').value).subscribe(
       (result) => {
-
+        console.log(result);
       },
       (error) => {
         console.log(error);

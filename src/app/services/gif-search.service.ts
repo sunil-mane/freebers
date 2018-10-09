@@ -7,12 +7,13 @@ import { Http } from '@angular/http';
 export class GifSearchService {
 
   host = 'http://api.giphy.com';
+  apiKey = 'ydirHJzF3l4Jr8NfcQg1kTsU0vl5JUY2';
 
   constructor(private http: Http) { }
 
-  search() {
-    const path = '/v1/gifs/search';
-    return this.http.get(this.host + path);
+  search(query: string) {
+    const path = `/v1/gifs/search?api_key=${this.apiKey}`;
+    return this.http.get(this.host + path + `&q=${query}`);
   }
 
 }
