@@ -6,4 +6,8 @@
   </select>
   <button type="submit"><i class="fas fa-search"></i></button>
 </form>
-{{gifSearchForm.value | json}}
+<div class="search-result">
+  <div *ngFor="let gif of gifs">
+    <img [src]="gif.images.original.url">
+  </div>
+</div>

@@ -9,6 +9,7 @@ import { GifSearchService } from '../services/gif-search.service';
 })
 export class GifSearchComponent implements OnInit {
   gifSearchForm: FormGroup;
+  gifs: any[];
   constructor(private gifSearchService: GifSearchService) {
     this.gifSearchForm = new FormGroup({
       query: new FormControl(''),
@@ -22,7 +23,8 @@ export class GifSearchComponent implements OnInit {
   gifSearch() {
     this.gifSearchService.search(this.gifSearchForm.get('query').value).subscribe(
       (result) => {
-        console.log(result);
+        this.gifs = result.json().data;
+        console.log(this.gifs);
       },
       (error) => {
         console.log(error);
