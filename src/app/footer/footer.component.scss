@@ -5,27 +5,7 @@ footer {
   display: inline-flex;
   height: 12rem;
 
-  .signup {
-    width: 50%;
-    display: block;
-    margin: 0 2rem;
-
-    input {
-      width: 20rem;
-      height: 2rem;
-      border-radius: 0.4rem;
-      border: 1px solid white;
-      margin-bottom: 1rem;
-      background-color: #373A3F;
-      padding-left: .75rem;
-      &::placeholder {
-        color: white;
-        font-weight: 500;
-      }
-    }
-  }
-
-  button{
+  button {
     width: 21rem;
     height: 2rem;
     border-radius: 0.4rem;
@@ -56,6 +36,27 @@ footer {
     li {
       margin: .5rem;
       font-size: .75rem;
+    }
+  }
+}
+
+.signup {
+  width: 50%;
+  display: block;
+  margin: 0 2rem;
+
+  input {
+    width: 20rem;
+    height: 2rem;
+    border-radius: 0.4rem;
+    border: 1px solid white;
+    margin-bottom: 1rem;
+    background-color: #373A3F;
+    padding-left: .75rem;
+
+    &::placeholder {
+      color: white;
+      font-weight: 500;
     }
   }
 }
