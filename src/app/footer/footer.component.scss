@@ -5,33 +5,19 @@ footer {
   display: inline-flex;
   height: 15rem;
 
-  button {
-    width: 21rem;
-    height: 2.5rem;
-    border-radius: 0.4rem;
-    border: 0;
-    background-color: #2B88B4;
-    color: white;
-  }
-
-  .links {
-    width: 50%;
-    display: block;
-  }
-
   h3 {
     padding: 1rem 0;
     font-size: 1.5rem;
   }
+}
 
-  .table {
-    width: 100%;
-    display: inline-flex;
+.categories {
+  width: 100%;
+  display: inline-flex;
 
-    ul {
-      width: 25%;
-      display: block;
-    }
+  ul {
+    width: 25%;
+    display: block;
 
     li {
       margin: .75rem;
@@ -39,6 +25,13 @@ footer {
       color: #777C80;
     }
   }
+
+}
+
+.links {
+  width: 50%;
+  display: block;
+  margin: 0 2rem;
 }
 
 .signup {
@@ -48,17 +41,37 @@ footer {
 
   input {
     width: 20rem;
-    height: 2rem;
+    height: 2.25rem;
     border-radius: 0.4rem;
     border: 1px solid white;
     margin-bottom: 1rem;
     background-color: #373A3F;
-    padding-left: .75rem;
+    padding-left: 1rem;
     color: white;
 
     &::placeholder {
       color: #777C80;
-      font-weight: 500;
+      font-weight: 600;
     }
+  }
+
+  button {
+    width: 21rem;
+    height: 2.5rem;
+    border-radius: 0.4rem;
+    border: 0;
+    background-color: #2B88B4;
+    color: white;
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .signup {
+    width: 100%
+  }
+
+  .links {
+    width: 100%;
   }
 }
