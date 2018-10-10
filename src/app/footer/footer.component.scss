@@ -3,11 +3,11 @@ footer {
   background-color: #373A3F;
   color: white;
   display: inline-flex;
-  height: 12rem;
+  height: 15rem;
 
   button {
     width: 21rem;
-    height: 2rem;
+    height: 2.5rem;
     border-radius: 0.4rem;
     border: 0;
     background-color: #2B88B4;
@@ -34,8 +34,9 @@ footer {
     }
 
     li {
-      margin: .5rem;
+      margin: .75rem;
       font-size: .75rem;
+      color: #777C80;
     }
   }
 }
@@ -53,9 +54,10 @@ footer {
     margin-bottom: 1rem;
     background-color: #373A3F;
     padding-left: .75rem;
+    color: white;
 
     &::placeholder {
-      color: white;
+      color: #777C80;
       font-weight: 500;
     }
   }
