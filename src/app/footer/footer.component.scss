@@ -1,9 +1,13 @@
 footer {
-  width: 100%;
-  background-color: #373A3F;
-  color: white;
-  display: inline-flex;
-  height: 15rem;
+  .upper {
+    background-color: #373A3F;
+    color: white;
+    padding: 2rem;
+
+    .box {
+      flex: 1;
+    }
+  }
 
   h3 {
     padding: 1rem 0;
@@ -11,33 +15,7 @@ footer {
   }
 }
 
-.categories {
-  width: 100%;
-  display: inline-flex;
-
-  ul {
-    width: 25%;
-    display: block;
-
-    li {
-      margin: .75rem;
-      font-size: .75rem;
-      color: #777C80;
-    }
-  }
-
-}
-
-.links {
-  width: 50%;
-  display: block;
-  margin: 0 2rem;
-}
-
 .signup {
-  width: 50%;
-  display: block;
-  margin: 0 2rem;
 
   input {
     width: 20rem;
@@ -66,12 +44,24 @@ footer {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .signup {
-    width: 100%
-  }
+.categories {
+  display: flex;
 
-  .links {
-    width: 100%;
+  ul {
+    flex: 1;
+
+    li {
+      margin: .75rem;
+      font-size: .75rem;
+      color: #777C80;
+    }
+  }
+}
+
+@media(min-width: 768px) {
+  footer {
+    .upper {
+      display: flex;
+    }
   }
 }
