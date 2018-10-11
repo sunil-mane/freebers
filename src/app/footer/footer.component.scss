@@ -30,6 +30,13 @@ footer {
 
           li {
             margin-right: .5rem;
+            a {
+              text-decoration: none;
+              color: #A0A1A5;
+              &:hover {
+                color: black;
+              }
+            }
           }
         }
       }
@@ -47,6 +54,10 @@ footer {
           margin: 0 .5rem;
           padding: .5rem;
           color: #A0A1A5;
+          &:hover {
+            color: black;
+            border: 1px solid black;
+          }
         }
       }
 
@@ -95,7 +106,13 @@ footer {
     li {
       margin: .75rem 0;
       font-size: .75rem;
-      color: #777C80;
+      a {
+        text-decoration: none;
+        color: #777C80;
+        &:hover {
+          color: white;
+        }
+      }
     }
   }
 }
